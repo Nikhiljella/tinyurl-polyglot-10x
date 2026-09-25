@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+vendor/
+target/
+bin/
+obj/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.gradle/
+build/
+.bundle/
+
+# IDE / System
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log

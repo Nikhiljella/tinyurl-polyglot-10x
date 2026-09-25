@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  01-go:
+    build:
+      context: ./01-go
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - BASE_URL=http://localhost:8001
+
+  02-typescript-fastify:
+    build:
+      context: ./02-typescript-fastify
+    ports:
+      - "8002:8002"
+    environment:
+      - PORT=8002
+      - BASE_URL=http://localhost:8002
+
+  03-python-fastapi:
+    build:
+      context: ./03-python-fastapi
+    ports:
+      - "8003:8003"
+    environment:
+      - PORT=8003
+      - BASE_URL=http://localhost:8003
+
+  04-rust-axum:
+    build:
+      context: ./04-rust-axum
+    ports:
+      - "8004:8004"
+    environment:
+      - PORT=8004
+      - BASE_URL=http://localhost:8004
+
+  05-java-spring:
+    build:
+      context: ./05-java-spring
+    ports:
+      - "8005:8005"
+    environment:
+      - PORT=8005
+      - BASE_URL=http://localhost:8005
+
+  06-dotnet-minimal:
+    build:
+      context: ./06-dotnet-minimal
+    ports:
+      - "8006:8006"
+    environment:
+      - PORT=8006
+      - BASE_URL=http://localhost:8006
+
+  07-ruby-sinatra:
+    build:
+      context: ./07-ruby-sinatra
+    ports:
+      - "8007:8007"
+    environment:
+      - PORT=8007
+      - BASE_URL=http://localhost:8007
+
+  08-php-slim:
+    build:
+      context: ./08-php-slim
+    ports:
+      - "8008:8008"
+    environment:
+      - PORT=8008
+      - BASE_URL=http://localhost:8008
+
+  09-kotlin-ktor:
+    build:
+      context: ./09-kotlin-ktor
+    ports:
+      - "8009:8009"
+    environment:
+      - PORT=8009
+      - BASE_URL=http://localhost:8009
+
+  10-bun-hono:
+    build:
+      context: ./10-bun-hono
+    ports:
+      - "8010:8010"
+    environment:
+      - PORT=8010
+      - BASE_URL=http://localhost:8010

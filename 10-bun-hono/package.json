@@ -1,0 +1,15 @@
+{
+  "name": "tinyurl-bun-hono",
+  "version": "1.0.0",
+  "description": "TinyURL service built with Bun and Hono with in-memory Map store",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun --watch src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

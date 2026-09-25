@@ -1,0 +1,20 @@
+{
+  "name": "tinyurl-typescript-fastify",
+  "version": "1.0.0",
+  "description": "TinyURL service in TypeScript with Fastify and in-memory store",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "node --test dist/**/*.test.js"
+  },
+  "dependencies": {
+    "fastify": "^4.28.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.2"
+  }
+}
